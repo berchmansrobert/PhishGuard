@@ -103,7 +103,9 @@ chrome.tabs.onUpdated.addListener(
                     url:
                         chrome.runtime.getURL(
                             "blocked.html"
-                        )
+                        ) +
+                        "?url=" +
+                        encodeURIComponent(url)
                 }
             );
 
