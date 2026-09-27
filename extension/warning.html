@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PhishGuard Warning</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+        }
+
+        .card {
+            width: 500px;
+            padding: 40px;
+            background: white;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+        }
+
+        .icon {
+            font-size: 50px;
+            color: #d97706;
+        }
+
+        h1 {
+            color: #1f2937;
+        }
+
+        p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .url {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f3f4f6;
+            border-radius: 10px;
+            word-break: break-all;
+            text-align: left;
+            font-size: 14px;
+            color: #374151;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .back {
+            background: #2563eb;
+            color: white;
+        }
+
+        .continue {
+            background: #e5e7eb;
+            color: #374151;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="icon">⚠</div>
+
+    <h1>PhishGuard Warning</h1>
+
+    <p>
+        PhishGuard detected some potentially
+        suspicious characteristics about this website.
+    </p>
+
+    <p>
+        Review the URL carefully before continuing.
+    </p>
+
+    <div class="url" id="url">
+        Loading URL...
+    </div>
+
+    <button
+        id="backButton"
+        class="back">
+        Go Back
+    </button>
+
+    <button
+        id="continueButton"
+        class="continue">
+        Continue Anyway
+    </button>
+
+</div>
+
+<script src="warning.js"></script>
+
+</body>
+</html>
