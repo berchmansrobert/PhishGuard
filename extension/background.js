@@ -1,5 +1,5 @@
 const PHISHGUARD_API =
-    "http://127.0.0.1:8000/check-url";
+    "https://phishguard-39yz.onrender.com/check-url";
 
 const checkedTabs = new Map();
 
